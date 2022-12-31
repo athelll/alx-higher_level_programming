@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 count = 1
 for num in range(9):
-    dig = count 
+    dig = count
     while dig < 10:
         if (num == dig):
             continue
