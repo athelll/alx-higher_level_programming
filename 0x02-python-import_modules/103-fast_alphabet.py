@@ -1,2 +1,3 @@
-#!/user/bin/pyhton3
-import ABC
+#!/usr/bin/python3
+import string
+print(string.ascii_uppercase)
