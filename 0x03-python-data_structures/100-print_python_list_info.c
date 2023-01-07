@@ -1,5 +1,5 @@
 #include <Python.h>
-
+#include <stdio.h>
 /*
 includes listobject.h
 VIEW HEADER-> https://github.com/python/cpython/blob/master/Include/listobject.h
