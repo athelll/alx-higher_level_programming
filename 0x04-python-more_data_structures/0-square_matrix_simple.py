@@ -10,7 +10,9 @@
 
 
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for i, z in enumerate(matrix):
-        new_matrix.append(list(map(lambda y: y**2, matrix[i])))
-    return new_matrix
+    if matrix is not None:
+        new_matrix = []
+        for i, z in enumerate(matrix):
+            new_matrix.append(list(map(lambda y: y**2, matrix[i])))
+        return new_matrix
+    return None
