@@ -11,5 +11,5 @@ def weight_average(my_list=[]):
             numerator += my_reduce(lambda a, b: a * b, my_list[i])
             denominator += my_list[i][-1]
         return numerator/denominator
-    else :
+    else:
         return 0
