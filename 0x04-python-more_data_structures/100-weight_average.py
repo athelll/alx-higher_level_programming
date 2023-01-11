@@ -4,9 +4,12 @@ def my_reduce(func, lists=()):
 
 
 def weight_average(my_list=[]):
-    numerator = 0
-    denominator = 0
-    for i, j in enumerate(my_list):
-        numerator += my_reduce(lambda a, b: a * b, my_list[i])
-        denominator += my_list[i][-1]
-    return numerator/denominator
+    if my_list is not None:
+        numerator = 0
+        denominator = 0
+        for i, j in enumerate(my_list):
+            numerator += my_reduce(lambda a, b: a * b, my_list[i])
+            denominator += my_list[i][-1]
+        return numerator/denominator
+    else :
+        return 0
