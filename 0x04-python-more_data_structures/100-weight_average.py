@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-def my_reduce(func, lists=()):
-    return func(lists[0], lists[1])
-
-
 def weight_average(my_list=[]):
     if my_list is not None:
         numerator = 0
         denominator = 0
-        for i, j in enumerate(my_list):
-            numerator += my_reduce(lambda a, b: a * b, my_list[i])
-            denominator += my_list[i][-1]
-        return numerator/denominator
+        for tup in my_list:
+            (score, weight) = tup
+            numerator += score * weight
+            denominator += weight
+        return (numerator/denominator) if denominator > 0 else 0
     else:
         return 0
