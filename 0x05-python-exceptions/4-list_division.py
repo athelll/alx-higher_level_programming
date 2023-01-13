@@ -5,8 +5,8 @@ def list_division(my_list_1, my_list_2, list_length):
     while idx < list_length:
         try:
             div.append(my_list_1[idx] / my_list_2[idx])
-        except TypeError:
-            print("wrong Type")
+        except (TypeError, ValueError):
+            print("wrong type")
             div.append(0)
         except ZeroDivisionError:
             print("division by 0")
