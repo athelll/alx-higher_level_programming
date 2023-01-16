@@ -8,7 +8,7 @@ defines a square with size
 class Square:
     """
     Square blueprint class
-    
+
     Args:
         size: size of square
     """
