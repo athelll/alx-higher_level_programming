@@ -8,7 +8,7 @@ Defines a square with size attributes
 class Square:
     """
     defines a square class
-    
+
     Args:
         size: size of a square side
     """
