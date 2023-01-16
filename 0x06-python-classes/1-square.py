@@ -1,4 +1,4 @@
-#!/us/bin/python3
+#!/usr/bin/python3
 """
 Module 1-square
 Defines a square with size attributes
