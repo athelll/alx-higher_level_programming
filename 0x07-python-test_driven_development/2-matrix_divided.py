@@ -36,7 +36,7 @@ def matrix_divided(matrix, div):
 
         try:
             new.append(list(map(lambda a: round(a/div, 2), row)))
-        except TypeError:
+        except (TypeError, ValueError):
             raise TypeError('matrix must be a matrix (list of lists)\
                   of integers/floats')
             return
