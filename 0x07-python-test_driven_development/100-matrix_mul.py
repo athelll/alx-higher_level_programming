@@ -38,12 +38,8 @@ def matrix_mul(m_a, m_b):
             'm_a' if m_b == [] else 'm_b'))
 
     # check if row is equal to coloumn
-    if len(m_b) > len(m_a):
-        if len(m_b) != len(m_a[0]):
-            raise TypeError("m_a and m_b can't be multiplied")
-    else:
-        if len(m_a) != len(m_b[0]):
-            raise TypeError("m_a and m_b can't be multiplied")
+    if len(m_a[0]) != len(m_b):
+        raise TypeError("m_a and m_b can't be multiplied")
 
     # check something
     len_check, len_check2 = len(m_a[0]), len(m_b[0])
