@@ -4,6 +4,7 @@ Module: 101-locked_class
 Creates a locked class
 """
 
+
 class LockedClass:
     """
     only allows the instance attribute
