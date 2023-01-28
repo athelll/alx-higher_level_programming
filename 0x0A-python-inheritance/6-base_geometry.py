@@ -8,7 +8,7 @@ Class: BaseGeometry
 class BaseGeometry:
     """
     BaseGeometry
-    
+
     Functions:
         area(self)
     """
