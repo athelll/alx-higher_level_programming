@@ -4,7 +4,7 @@
 
 def is_same_class(obj, a_class):
     """
-    function returns a boolean if obj is 
+    function returns a boolean if obj is
     an instance of a_class
     """
 
