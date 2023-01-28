@@ -17,14 +17,12 @@ class Rectangle(BaseGeometry):
         __init_(self, width, height)
     """
     def __init__(self, width, height):
-        """initializes the rectangle with 
-        width and height
-
+        """initializes the width and height
         Args:
             width(int)
             height(int)
         """
-        super().integer_validator("width", self.__width)
+        super().integer_validator("width", self.width)
         self.__width = width
-        super().integer_validator("height", self.__height)
+        super().integer_validator("height", self.height)
         self.__height = height
