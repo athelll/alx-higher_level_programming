@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""to_json_string"""
+"""form_json_string"""
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """json to string"""
     import json
-    return json.loads(my_obj)
+    return json.loads(my_str)
