@@ -18,4 +18,4 @@ try:
 except FileNotFoundError:
     existing = []
 
-save_json(existing + argv[1:], filename)    
+save_json(existing + argv[1:], filename)
