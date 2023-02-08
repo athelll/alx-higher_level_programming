@@ -6,7 +6,7 @@ converts the json string in a file
 into a pythonic object
 
 Func:
-    load_from_json_file(filename)   
+    load_from_json_file(filename)
     Return: python object
 
 """
