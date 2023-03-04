@@ -1,5 +1,5 @@
 -- number of shows
-USE HBNB;
+
 SELECT tv_genres.name AS genre, COUNT(*) as number_shows
 FROM tv_genres
 INNER JOIN tv_show_genres
