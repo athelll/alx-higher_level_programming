@@ -1,10 +1,10 @@
 -- california
 
-SELECT cities.id, cities.name
+SELECT id, name
 FROM cities
 WHERE id = (
-	SELECT states.id
+	SELECT id
 	FROM states
-	WHERE states.name = 'California'
+	WHERE name = 'California'
 )
 ORDER BY cities.id ASC;
