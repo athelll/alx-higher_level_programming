@@ -23,7 +23,8 @@ if __name__ == "__main__":
     cursor.execute(prompt)
 
     for row in cursor.fetchall():
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
 
     cursor.close()
     db.close()
