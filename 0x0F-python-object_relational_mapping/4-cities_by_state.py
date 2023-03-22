@@ -16,8 +16,8 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     cursor.execute("""SELECT cities.id, cities.name, states.name
-                      FROM states
-                      INNER JOIN cities
+                      FROM cities
+                      INNER JOIN states
                       ON states.id = cities.state_id
                       ORDER BY cities.id ASC;""")
 
