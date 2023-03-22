@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+queries the local database
+for all state row entries
+"""
 
 from model_state import Base, State
 from sqlalchemy import create_engine
