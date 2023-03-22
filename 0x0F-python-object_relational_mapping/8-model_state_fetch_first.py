@@ -18,7 +18,7 @@ if __name__ == "__main__":
     session = Session()
 
     # first instance of in state table
-    result = session.query(State).order_by(State.id)[0]
+    result = session.query(State).order_by(State.id).first()
 
     if result:
         print("{}: {}".format(result.id, result.name))
