@@ -13,7 +13,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    with session as s:
-        result = s.query(State).order_by(State.id)
-        for user in result:
-            print("{}: {}".format(user.id, user.name))
+    result = s.query(State).order_by(State.id)
+    for user in result:
+        print("{}: {}".format(user.id, user.name))
+
+    session.close()
