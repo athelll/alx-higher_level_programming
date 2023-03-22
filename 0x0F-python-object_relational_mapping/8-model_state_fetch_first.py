@@ -17,8 +17,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    if len(session.query(State).all()) != 0:
-        result = session.query(State).order_by(State.id)[0]
+    # first instance of in state table
+    result = session.query(State).order_by(State.id)[0]
+
+    if result:
         print("{}: {}".format(result.id, result.name))
     else:
         print('Nothing')
