@@ -8,8 +8,6 @@ in the response header using `requests` package
 import sys
 import requests
 
-
 if __name__ == '__main__':
-    url = sys.argv[1]
-    response = requests.get(url)
+    response = requests.get(sys.argv[1])
     print(response.headers['X-Request-Id'])
