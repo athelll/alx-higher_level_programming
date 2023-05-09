@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """
-Python script that fetches response 
+Python script that fetches response
 from `https://alx-intranet.hbtn.io/status`
 """
 
-import urllib.request
-
 if __name__ == "__main__":
-    # function doesnt run when imported
+    # code does'nt execute when imported
+
+    import urllib.request
+
     url = "https://alx-intranet.hbtn.io/status"
     opener = urllib.request.urlopen
 
